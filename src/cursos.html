@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="css/materialize.css"/>
 		<link rel="stylesheet" href="css/mystyle.css"/>
 	</head>
-<body class="">
+<body ng-controller="movieCtrl as movie">
 	<header>
 		<div class="nav-bar fixed">
 			<nav class="black" role="navigation">
@@ -34,26 +34,23 @@
 					Cursos intersemestrales
 				</span>
 			</div>
-			<div class="col s12 m12 l8 offset-l2 center">
-				<span class="titulo">
-					Buscar
-				</span>
+			<div class="container col s12 m12 l8 offset-l2 center">
+				<span class="titulo">Buscar</span>
 				<div class="input-field">
-					<input  id="courseSearch" placeholder="Nombre del curso" data-id="courseSearch" type="text">
+					<input  id="BuscarCurso" placeholder="Nombre del curso" ng-model="search" data-id="BuscarCurso" type="text">
+					<p>{{search}}</p>
 				</div>
-				<a data-delay="50" data-tooltip="Inicia sesión o regístrate para comprar" data-position="bottom" class="tooltipped disabled btn-large" data-tooltip-id="dccb9b34-7a0c-de63-d94b-50a200c172a3">Comprar arduino uno</a>
-				<!--a data-delay="50" data-tooltip="Inicia sesión o regístrate para comprar" data-position="bottom" class="tooltipped disabled btn-large">Comprar raspberry pi</a-->
 			</div>
 		</div>
 		<div class="grid row" style="position: relative; height: 564.203px;">
 			<div class="grid-sizer col s12 m3 l3"></div>
-			<div class="grid-item python col s12 m3 l3" style="position: absolute; left: 0%; top: 0px;">
+			<div class="col s12 m3 l3" ng-repeat="n in movie.Python | filter:search" style="position: absolute; left: 0%; top: 0px;">
 				<div class="card large" style="height: 564px;">
 					<div class="card-image waves-effect waves-block waves-light">
 						<img class="activator" src="img/python.jpg">
 					</div>
 					<div class="card-content">
-						<span class="card-title activator name">Python</span>
+						<span class="card-title activator name">{{n.Python}}</span>
 						<p>
 							Fecha: 22/04/2017 al 20/05/2017<br>
 							Horario: 10:00:00 a 14:00:00
@@ -525,6 +522,7 @@
   firebase.initializeApp(config);
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
 <script src="js/app.js"></script>
 <script src="js/materialize.min.js"></script>
 </html>
