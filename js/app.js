@@ -13,16 +13,16 @@ function movieCtrl(){
   movie.Android = [{'Android' : 'Android'}];
   movie.Arduino = [{'Arduino':'Arduino'}];
   movie.Bases    = [{'Bases':'Bases de Datos'}];
-  movie.C1      = [{'C1':'C++'}];
+  movie.Cplus      = [{'Cplus':'C++'}];
   movie.C       = [{'C':'C'}];
-  movie.C2      = [{'C2':'C#'}];
-  movie.Di  = [{'Di':'Diseño WEB'}];
-  movie.Emsamblado= [{'Emsamblado':'Emsamblado y Mantenimiento'}];
-  movie.Computacion = [{'Computacion':'Computacion Forense'}];
+  movie.Csharp      = [{'Csharp':'C#'}];
+  movie.diseweb  = [{'diseweb':'Diseño WEB'}];
+  movie.Ensamblado= [{'Ensamblado':'Ensamblado y Mantenimiento'}];
+  movie.computoforense = [{'computoforense':'Computo Forense'}];
   movie.Fortran = [{'Fortran':'Fortran'}];
   movie.IA = [{'IA':'Inteligencia Artificial'}];
-  movie.Introduccion = [{'Introduccion':'Introduccion a la programacion'}];
-  movie.ios = [{'ios' : 'ios'}];
+  movie.Intro = [{'Intro':'Introduccion a la programacion'}];
+  movie.IOS = [{'IOS' : 'ios'}];
   movie.redes = [{'redes':'Redes'}];
   movie.ras = [{'ras':'Raspberry'}];
   movie.Python = [{'Python':'Python'}];
@@ -45,3 +45,15 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.dropdown-button').dropdown();
   });
+
+$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+
+$(document).ready(function(){
+      $('.carousel.carousel-slider').carousel({fullWidth:true});
+    });
+
+$(document).ready(function(){
+      $('.modal').modal();
+    });
