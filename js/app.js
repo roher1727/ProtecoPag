@@ -47,11 +47,11 @@ $(document).ready(function(){
   });
 
 $(document).ready(function(){
-      $('.parallax').parallax();
+      $('.carousel.').carousel({fullWidth:true});
     });
 
 $(document).ready(function(){
-      $('.carousel.carousel-slider').carousel({fullWidth:true});
+      $('.parallax').parallax();
     });
 
 $(document).ready(function(){
