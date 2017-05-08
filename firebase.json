@@ -1,0 +1,14 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "C:/Users/Hector/Documents/Proyecto",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "C:/Users/Hector/Documents/Proyecto"
+      }
+    ]
+  }
+}

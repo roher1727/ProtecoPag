@@ -8,16 +8,20 @@
     <link rel="shortcut icon" type="image/png" href="img/icon.ico">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
     <header>
       <ul id="entrar_dropdown-desktop" class="dropdown-content">
-        <li><a href="#">Iniciar sesión</a></li>
+        <li><a id="btn-gmail">Gmail</a></li>
+        <li><a id="btn-github">Github</a></li>
+        <li><a id="btn-facebook">Facebook</a></li>
       </ul>
       <ul id="entrar_dropdown-mobile" class="dropdown-content">
-        <li><a href="#">Iniciar sesión</a></li>
+        <li><a id="btn-gmail">Gmail</a></li>
+        <li><a id="btn-github">Github</a></li>
+        <li><a id="btn-facebook">Facebook</a></li>
       </ul>
       <nav class="black" role="navigation">
         <div class="nav-wrapper container">
@@ -27,13 +31,13 @@
             <li><a class="proy-style" href="src/cursos.html">Cursos</a></li>
             <li class="active"><a class="proy-style" href="src/convocatoria.html">Convocatoria</a></li>
             <li><a class="proy-style" href="index.html">Informacion</a></li>
-            <li><a class="dropdown-button btn" href="#!" data-activates="entrar_dropdown-desktop">Entrar<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button btn" href="#!" data-activates="entrar_dropdown-desktop">Iniciar sesión con<i class="material-icons right">arrow_drop_down</i></a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li><a class="proy-style" href="src/cursos.html">Cursos</a></li>
             <li class="active"><a class="proy-style" href="src/convocatoria.html">Convocatoria</a></li>
             <li><a class="proy-style" href="index.html">Informacion</a></li>
-            <li><a class="dropdown-button btn" href="#!" data-activates="entrar_dropdown-mobile">Entrar<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button btn" href="#!" data-activates="entrar_dropdown-mobile">Iniciar sesión con<i class="material-icons right">arrow_drop_down</i></a></li>
           </ul>
         </div>
       </nav>
@@ -278,21 +282,9 @@
   </footer>
 </body>
 <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-<script>
-// Initialize Firebase
-var config = {
-apiKey: "AIzaSyAeqnwWDErugKjHwRzgT2SvrWRnqbqsDZs",
-authDomain: "proyectoweb-b78be.firebaseapp.com",
-databaseURL: "https://proyectoweb-b78be.firebaseio.com",
-projectId: "proyectoweb-b78be",
-storageBucket: "proyectoweb-b78be.appspot.com",
-messagingSenderId: "408946736605"
-};
-firebase.initializeApp(config);
-</script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/angular.min.js"></script>
-<script src="js/app.js"></script>
+<script src="js/app.min.js"></script>
 <script src="js/materialize.min.js"></script>
 <script src="js/widget.js"></script>
 </html>
